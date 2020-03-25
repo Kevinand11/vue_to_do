@@ -5,7 +5,7 @@ Vue.component('todo', {
         <div class="d-flex justify-content-between my-2 bg-white p-2">
             <span>{{ todo.task }}</span>
             <div>
-                <button class="btn btn-sm btn-success" @click="changeDone">&#10003</button>
+                <button class="btn btn-sm btn-success" @click="changeDone">{{ todo.done ? "Uncheck" : "Check" }}</button>
                 <button class="btn btn-sm btn-danger" @click="deleteTodo">&times</button>
             </div>
         </div>
