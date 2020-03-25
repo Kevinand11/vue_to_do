@@ -71,12 +71,6 @@ new Vue({
 		saveTodo() {
 			this.todos.push({ task: this.newTask, done: false })
 			this.newTask = ''
-		},
-		changeDone(todo) {
-			console.log(todo)
-		},
-		deleteTodo(todo) {
-			console.log(todo)
 		}
 	}
 })
